@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;      
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-color: #93747D;
+    padding: 40px 0;   
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list,
+.nav-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    list-style: none; 
+}
+
+.nav-link {
+    display: inline-block;   
+    padding: 0 20px;    
+    font-size: 20px;
+    font-weight: 400;
+    color: #EFE3D8;     
+}
+
+.nav-link::after {
+    content: '';    
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: #EFE3D8;
+    transition: .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-icons li {
+    margin-right: 20px;
+}
+
+.nav-icons img {
+    width: 24px;
+    height: 24px;    
+    transition: .5s all ease;
+}
+
+.nav-icons img:hover {
+    transform: scale(1.2);
+}
+
+.info {
+    background: #EFE3D8;
+    padding: 80px 0 20px 0;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+}
+
+.main-container .section {    
+    padding: 0 20px;    
+}
+
+.section {    
+    flex: 0 1 50%;
+    margin-bottom: 60px;
+}
+
+.profile {
+    background-color: #DFCFC0;
+}
+
+.section-profile {    
+    padding: 40px 0 50px 0;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;  
+}
+
+.wrapper {
+    flex: 0 1 60%;
+    padding: 0 15px 0 0;
+} 
+
+.section-profile-photo {
+    flex: 0 0 430px;
+}
+
+.section-profile-title {
+    margin-top: 75px;
+    font-weight: 700;
+    font-size: 40px;
+    color: #5E474D;   
+    text-transform: uppercase;
+}
+
+.section-profile-subtitle {
+    color: #5E474D;
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.section-profile-summary p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #5E474D;
+    margin-top: 30px;
+}
+
+.section-profile-photo img{
+    width: 424px;
+    height: 438px;
+    object-fit: cover;    
+}
+
+.section-title {
+    margin-bottom: 20px;  
+    font-size: 40px;
+    font-weight: 400;    
+    letter-spacing: 3px;
+    color: #5E474D;
+}
+
+.section-list {
+    list-style: none;
+}
+
+.skills ul,
+.education ul {
+    list-style: circle inside;
+}
+
+.section-item {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;    
+    color: #5E474D;
+}
+
+.section-item a {
+    font-weight: 400;
+    font-size: 20px;    
+    text-decoration-line: underline;     
+    color: #5E474D;
+    transition: .5s all ease;
+}
+
+.section-item a:hover {      
+    color: #5E474D;
+    font-weight: 700;
+}
+
+.pre {
+    white-space: pre-wrap;
+}
+
+.footer {
+    background: #93747D;
+    color: #EFE3D8; 
+    padding: 20px 0;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    width: 190px;
+    height: 70px;   
+    background-image: url(./assets/img/rs_school_js.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
